@@ -1,0 +1,32 @@
+package com.cxx.pojo;
+
+public class Academy {
+	private int id;
+	private String name;
+	public Academy(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	public Academy() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "Academy [id=" + id + ", name=" + name + "]";
+	}
+	
+}

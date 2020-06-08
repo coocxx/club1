@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+	default-autowire="byName">
+
+	<!-- 扫描注解 -->
+	<context:component-scan base-package="com.cxx.controller"></context:component-scan>
+	<!-- <context:component-scan base-package="com.cxx.controller"> <context:exclude-filter 
+		type="annotation" expression="org.springframework.stereotype.Controller"/> 
+		</context:component-scan> -->
+	<!-- 注解驱动 注册HandlerMapping和HandlerAdapter -->
+	<!-- org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandler 
+		Mapping -->
+	<!-- org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerA 
+		dapter -->
+
+	<!-- 启动SpringMVC的注解功能，它会自动注册HandlerMapping、HandlerAdapter、ExceptionResolver的相关实例 -->
+	<!-- <mvc:annotation-driven /> <mvc:default-servlet-handler /> -->
+
+	<!-- 上面注解驱动的简化 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+
+	<!-- <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven> 
+		自定义参数绑定 <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> 
+		转换器 <property name="converters"> <list> 日期类型转换 <bean class="hit.common.DateConverter"/> 
+		</list> </property> </bean> -->
+
+	<!-- 设置静态资源 -->
+	<!-- 浏览器url上地址是 /BSpringMVC_2_reMapping/js/XXXX，就去webcontent的js找 -->
+	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+	<mvc:resources location="/before/js/"
+		mapping="/before/js/**"></mvc:resources>
+	<mvc:resources location="/admin/js/" mapping="/admin/js/**"></mvc:resources>
+
+	<mvc:resources location="/before/css/" mapping="/before/css/**"></mvc:resources>
+	<mvc:resources location="/admin/css/" mapping="/admin/css/**"></mvc:resources>
+
+	<mvc:resources location="/img/" mapping="/img/**"></mvc:resources>
+	<mvc:resources location="/before/images/" mapping="/before/images/**"></mvc:resources>
+	<mvc:resources location="/admin/images/" mapping="/admin/images/**"></mvc:resources>
+
+
+	<!-- 自定义视图解析器 -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+		<property name="prefix" value="/"></property> <property name="suffix" value=".jsp"></property> 
+		</bean> -->
+	<!-- 文件上传 -->
+	<!-- <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean> -->
+</beans>

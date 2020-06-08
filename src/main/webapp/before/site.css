@@ -1,0 +1,82 @@
+
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.container{
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+	background-color:snow;
+	background-image: url(../images/ba_container.png);
+}
+header{
+	height:65px;
+	overflow: hidden;
+	border-bottom: solid thin snow;
+	box-shadow: 0px 1px 5px 5px white;
+}
+header .content{
+	height:80px;
+	width: 100%;
+	background-color: snow;
+}
+header .content a{
+	height:80px;
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	color: #803030;
+	line-height: 60px;
+	text-decoration: none;
+}
+header .content p{
+	height:80px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: #803030;
+    line-height: 60px;
+    
+}
+/* 用户名 */
+header .content p span{
+	font-weight: 600;
+	color: silver;
+}
+header .content ul li{
+	list-style-type: none;
+}
+.left{
+	margin-left: 200px;
+}
+.right{
+	margin-right: 150px;
+}
+.left li a{
+	float: left;
+	padding:0px 25px;
+}
+.right li a,.right li p{
+	float: right;
+	padding:0px 25px;
+}
+header .content ul li a:hover,header .content ul li a:active{
+	background-color:gray;
+	color: snow;
+}
+footer{
+	height:100px;
+	font-size: 1px;
+	text-align: center;
+	background-color: snow;
+	border: rgba(153,16,16,0.1) solid thin;
+}
+footer p{
+	color: gray;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 40px;
+	
+}

@@ -1,0 +1,96 @@
+.main{
+	
+}
+.main>h1{
+	
+}
+.main>h3>a{
+	color:green;
+}
+.main>h3>a:hover{
+	color:rgba(100,170,58,1);
+	
+}
+.main .layui-card .layui-card-header>a{
+	/* color:green; */
+	color:rgb(57,61,73,0.1);
+	
+}
+.main .layui-card .layui-card-header>a:hover{
+	/* color:rgba(100,170,58,1); */
+}
+/* .search{
+	width: 1024px;
+	height: auto;
+	margin: 0px auto;
+	background-color: rgb(194,155,129);
+}
+.search>img{
+	float: left;
+}
+
+.logo{
+	height: 50px;
+	width:653px;
+	border: #103010 solid thin;
+	background-color: white;
+	float: left;
+	margin-top: 50px ;
+	border-radius: 5px;
+	box-shadow:0px 0px 1px 1px #EF4136;
+}
+.logo img{
+	height: 50px;
+	width: 70px;
+	display: inline-block;
+	float: left;
+	border-right: #103010 solid thin;
+	padding:0px 20px;
+}
+.logo input[type="text"]{
+	height:50px ;
+	width:400px;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	padding-right: 10px;
+	padding:0px 20px;
+	font-size: 18px;
+	border: none;
+}
+
+.logo a{
+	height:50px ;
+	width:100px;
+	display: inline-block;
+	float: right;
+	font-size: 16px;
+	text-align: center;
+	border-left: #EF4136 solid thin;
+	text-decoration: none;
+	color: #464547;
+	background-color: rgb(153,16,16);
+	 
+}
+.logo a:hover{
+	background-color: rgb(121,0,18);
+	
+}
+
+.logo a>span{
+	display: block;
+	margin-top: 10px;
+	font-size: 22px;
+	color: #FFFAFA;
+}
+.flexslider{
+	width: 1024px;
+	margin: 0px auto;
+}
+.main{
+	height: 400px;
+	width: 100%;
+	
+}
+
+ */
